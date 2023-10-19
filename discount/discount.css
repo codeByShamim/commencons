@@ -1,0 +1,245 @@
+
+
+#desktop-nav {
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+}
+
+#discount-page-section {
+    height: 100%;
+    background-image: -o-repeating-linear-gradient(45deg, transparent, transparent 82px, rgba(250, 142, 117, 0.02) 82px, rgba(250, 142, 117, 0.02) 164px);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 82px, rgba(250, 142, 117, 0.02) 82px, rgba(250, 142, 117, 0.02) 164px);
+
+}
+
+/* styles for the discount page section */
+.discount-page-header {
+    background-color: #13038F;
+    color: white;
+    text-align: center;
+    padding: 100px 20px 200px 20px;
+    z-index: -5 !important;
+}
+
+.discount-page-header img {
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.discount-page-header p {
+    font-size: 18px;
+    width: 40%;
+    margin: auto;
+    margin-top: 20px;
+    color: lightgray;
+}
+
+/* Style the container to hold the combined input and button */
+/* Style the container to hold the combined input and button */
+.email-container {
+    position: relative;
+    max-width: 600px; /* Adjust the width as needed */
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* Style the email input */
+.email-input {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    outline: none;
+    font-size: 16px;
+}
+.email-input::-webkit-input-placeholder {
+    font-size: 16px;
+}
+.email-input::-moz-placeholder {
+    font-size: 16px;
+}
+.email-input:-ms-input-placeholder {
+    font-size: 16px;
+}
+.email-input::-ms-input-placeholder {
+    font-size: 16px;
+}
+.email-input::placeholder {
+    font-size: 16px;
+}
+
+/* Style the submit button inside the input */
+.submit-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #CC0076;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    height: 57px; /* Adjust the height */
+    padding: 0 25px; /* Adjust the padding */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.submit-button:hover {
+    background-color: #a80263;
+}
+
+
+/* styles for the 8 services block */
+.services-block-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    margin-top: -100px; /* Adjust the negative margin to move it up */
+    position: relative; /* Add this property to make it overlap with .discount-page-header */
+    z-index: 1; /* Add this property to control stacking order */
+}
+
+.services-block {
+    position: relative;
+    width: 30%;
+    padding: 50px;
+    margin-bottom: 80px;
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 25 !important;
+    background-color: #fff; /* Add background color here */
+}
+
+.services-block-img {
+    position: absolute;
+    top: -40px;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: red;
+}
+
+.services-block h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services-block p {
+    color: #7A8390;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.discount-price-wrapper sup {
+    color: #FF2C5D;
+    font-size: 24px;
+}
+
+.starting-price {
+    color: gray;
+}
+
+.starting-price i {
+    margin: 0 5px;
+    color: lightgray;
+}
+
+.discount-price {
+    font-size: 40px;
+    font-weight: 900;
+    margin: 0 5px;
+    color: #FF2C5D;
+}
+.getandDetails-btn{
+    max-width: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid rgba(211, 211, 211, 0.425);
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.services-block .claim-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    margin-right: 10px;
+}
+.claim-btn:hover{
+    opacity: 0.7;
+}
+
+.details-btn{
+    padding: 10px 20px;
+}
+@media screen and (max-width: 400px){
+    .services-block{
+        padding: 30px;
+    }
+    .services-block h1{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .discount-page-header{
+        padding: 50px 20px 200px 20px;
+    }
+    .discount-page-header p{
+        width: 90% !important;
+    }
+    .email-input{
+        padding: 13px;
+    }
+    .submit-button{
+        height: 47px;
+        font-size: 14px;
+        padding: 13px 10px;
+    }
+    
+    
+}
+@media screen and (max-width: 768px){
+    .services-block-wrapper{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .services-block{
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 990px) {
+    .discount-page-header p {
+        width: 80%;
+    }
+    .services-block{
+        width: 45%;
+    }
+}

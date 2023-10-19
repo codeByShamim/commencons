@@ -1,0 +1,258 @@
+
+
+#psdtohtml{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 80px 20px;
+}
+#psdtohtml h1{
+    margin-bottom: 20px;
+}
+#psdtohtml p{
+    font-size: 18px;
+    margin: auto;
+    width: 40%;
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+    background-color: var(--deep-cerulean-950);
+    color: rgb(223, 223, 223);
+}
+#psdtohtml img{
+    margin-top: 80px;
+}
+
+/* project showcase section */
+#project-showcase-wrapper{
+  padding: 20px;
+}
+
+.showcase-header{
+    max-width: 1200px;
+    margin: auto;    
+    padding: 50px 0px 100px 0;
+}
+
+.showcase-header p{
+    width: 50%;
+    margin-top: 20px;
+    font-size: 18px;
+    color: var(--deep-cerulean-950);
+}
+
+#project-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.showcase {
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    border: 1px solid rgba(211, 211, 211, 0.589);
+    width: 30%;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    transition-delay: 0.2s; /* Add more delay here */
+}
+
+/* Define a class for the fly-in animation */
+.fly-in {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+.showcase img{
+    border-radius: 5px 5px 0 0;
+    transition: 0.4s;
+}
+.showcase:hover img{
+    transform: scale(1.1);
+}
+.showcase:hover i{
+    color: var(--deep-cerulean-600);
+}
+
+
+.showcase h3{
+    margin: 20px;
+}
+/* live link and github btn */
+.live-github-btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 20px 20px 20px;
+}
+
+.live-github-btn a{
+    text-decoration: none;
+}
+
+.live-link-btn{
+    background-color: var(--deep-cerulean-950);
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.live-link-btn:hover{
+    background-color: #02344acc;
+}
+.live-link-btn a{
+    color: white;
+}
+.source-code{
+    padding: 10px 15px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.source-code a{
+    color: black;
+}
+
+/* pricing section */
+#convert-pricing-section-wrapper{
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 20px;
+}
+#convert-pricing-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#convert-pricing-header p{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+#convert-pricing-section{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center vertically within the flex container */
+}
+.convert-pricing{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid var(--deep-cerulean-600);
+    align-self: flex-start;
+    border-radius: 5px;
+}
+.convert-pricing:hover{
+    background-color: #EAFEFF;
+}
+.convert-pricing span{
+    background-color: #EAFEFF;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.convert-price {
+    font-size: 35px;
+    font-weight: bold;
+}
+.convert-price .dell{
+    font-size: 18px;
+    color: lightgray;
+}
+.popular-offer{
+    border: 3px solid var(--deep-cerulean-600);
+    padding: 0;
+}
+.popular-offer .convert-price{
+    color: white;
+}
+.popular-offer p{
+    border-bottom: none !important;
+    color: white;
+}
+.popular-offer .option{
+    padding: 0 10px;
+}
+.popular-offer-header{
+    background-color: var(--deep-cerulean-600);
+    padding: 5px;
+}
+.popular-offer {
+    border-top: 20px solid var(--deep-cerulean-600);
+}
+.popular-offer .offer-start-btn{
+    margin: 20px 10px 20px 20px;
+}
+.convert-pricing .option{
+    margin: 10px 0;
+}
+.convert-pricing .option i{
+    color: var(--deep-cerulean-600);
+}
+.convert-pricing i{
+    margin-right: 10px;
+}
+.convert-price{
+    margin: 20px 0;
+}
+.convert-pricing p{
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.336);
+}
+
+.offer-start-btn{
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: var(--deep-cerulean-600);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.offer-start-btn:hover i{
+    margin-left: 15px;
+}
+.offer-start-btn i{
+    margin-left: 5px;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 600px){
+    #psdtohtml{
+        padding: 50px 20px;
+    }
+   
+    #psdtohtml img{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 650px){
+    .showcase{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 768px){
+   
+    #psdtohtml p{
+        width: 80%;
+    }
+    
+    .showcase-header p{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 990px){
+   
+    .showcase{
+        width: 48%;
+        margin-bottom: 30px;
+    }
+    
+}

@@ -1,0 +1,200 @@
+
+
+:root {
+    --deep-cerulean-50: #eafeff;
+   --deep-cerulean-100: #cafcff;
+   --deep-cerulean-200: #9cf7ff;
+   --deep-cerulean-300: #57efff;
+   --deep-cerulean-400: #0cdcff;
+   --deep-cerulean-500: #00bfea;
+   --deep-cerulean-600: #0096c4;
+   --deep-cerulean-700: #007ea7;
+   --deep-cerulean-800: #0b607f;
+   --deep-cerulean-900: #0e4f6b;
+   --deep-cerulean-950: #02344a;
+     }
+   
+   
+   
+   
+   /* styles for the affiliate landing page section */
+   #affiliate-landing-page{
+       background-color: var();
+   }
+   
+   .affiliate-header{
+       margin: auto;
+       max-width: 1200px;
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-pack: justify;
+           -ms-flex-pack: justify;
+               justify-content: space-between;
+       -webkit-box-align: center;
+           -ms-flex-align: center;
+               align-items: center;
+       padding: 100px;
+       margin-bottom: 50px;
+       background-color: var(--deep-cerulean-50);
+   }
+   .header-left{
+       width: 50%;
+       padding: 20px;
+       border-radius: 5px;
+   }
+   .header-left ul{
+       list-style-type: none;
+   }
+   .header-left ul li{
+       font-size: 18px;
+       padding: 10px;
+       background-color: var(--deep-cerulean-950);
+       margin-bottom: 10px;
+       color: lightgray;
+       border-radius: 10px;
+   }
+   .header-left h1{
+       margin-bottom: 30px;
+   }
+   .why-important li{
+       line-height: 25px;
+       border-left: 5px solid var(--deep-cerulean-500);
+   }
+   .why-important span{
+       font-weight: bold;
+       color: var(--deep-cerulean-500);
+       background-color: white;
+       color: black;
+       padding: 2px 5px 5px 5px;
+       border-radius: 5px;
+   }
+   
+   .header-right{
+       width: 40%;
+   }
+   .header-right img{
+       
+       padding: 10px;
+       border: 1px solid var(--deep-cerulean-700);
+       border-radius: 10px;
+   }
+   
+   /* styles for the what client get section */
+   #client-get-wrapper{
+       max-width: 1200px;
+       margin: auto;
+       margin-bottom: 80px;
+       border-radius: 10px;
+       padding: 20px;
+       -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+               box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   }
+   #client-get-wrapper h1{
+       text-align: center;
+       margin-bottom: 20px;
+   }
+   #client-get-wrapper ul{
+       list-style-type: none;
+   }
+   #client-get-wrapper ul li{
+       color: var(--deep-cerulean-950);
+       padding: 5px;
+       border-bottom: 1px solid rgba(211, 211, 211, 0.226);
+   }
+   .benifit{
+       width: 40%;
+       background-color: white;
+       padding: 10px;
+   }
+   .benifit i{
+       margin-right: 10px;
+       color: var(--deep-cerulean-400);
+   }
+   
+   .client-get{
+       background-color: var(--deep-cerulean-50);
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-pack: justify;
+           -ms-flex-pack: justify;
+               justify-content: space-between;
+       -webkit-box-align: center;
+           -ms-flex-align: center;
+               align-items: center;
+       padding: 20px 100px;
+   }
+   
+   .client-action p{
+       padding: 10px 20px;
+      
+   }
+   .action-contact{
+       background-color: var(--deep-cerulean-400);
+       color: white;
+       cursor: pointer;
+   }
+   .fquotes{
+       margin-top: 10px;
+       text-align: center;
+       background-color: none !important;
+       border: 1px solid var(--deep-cerulean-400);
+       color: black;
+       cursor: pointer;
+       }
+   
+       /* responsive start here */
+       @media screen and (max-width: 400px){
+           .header-left h1{
+               font-size: 22px;
+           }
+       }
+       @media screen and (max-width: 600px){
+           .affiliate-header{
+               padding: 50px 20px;
+           }
+           .header-left{
+               padding: 0 !important;
+           }
+           .header-left ul li{
+            margin-bottom: 20px;
+           }
+           .client-get{
+               padding: 20px;
+           }
+           #client-get-wrapper{
+            margin: 0 10px 80px 10px;
+           }
+       }
+       @media screen and (max-width: 768px){
+           .affiliate-header{
+               -webkit-box-orient: vertical;
+               -webkit-box-direction: normal;
+                   -ms-flex-direction: column;
+                       flex-direction: column;
+           }
+           .header-left{
+               width: 100%;
+               margin-bottom: 30px;
+           }
+          
+           
+           .header-right{
+               width: 100%;
+           }
+   
+           .client-get{
+               -webkit-box-orient: vertical;
+               -webkit-box-direction: normal;
+                   -ms-flex-direction: column;
+                       flex-direction: column;
+           }
+           .benifit{
+               width: 100%;
+               margin-bottom: 30px;
+           }
+           .client-action{
+               width: 100%;
+           }
+       }
